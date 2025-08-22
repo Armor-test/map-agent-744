@@ -1,0 +1,38 @@
+# CODEOWNERS file for map-agent-744
+# Global owners - will be requested for all PRs
+* @Armor-test/team-security @Armor-test/dept-release @Armor-test/dept-test
+
+# Directory ownership
+/db/ @Armor-test/grp-storage @Armor-test/squad-database @Armor-test/squad-reporting
+/components/ @Armor-test/squad-reporting @Armor-test/team-reporting
+/pkg/ @Armor-test/squad-apps @Armor-test/team-logging @Armor-test/team-core
+/docs/ @Armor-test/unit-design @Armor-test/grp-ui @Armor-test/team-frontend
+/third_party/ @Armor-test/dept-release @Armor-test/dept-ui @Armor-test/dept-reliability
+/lib/ @Armor-test/dept-api @Armor-test/squad-api @Armor-test/grp-api
+/shared/ @Armor-test/team-security @Armor-test/squad-mobile
+/auth/ @Armor-test/squad-tooling @Armor-test/team-frontend
+/middleware/ @Armor-test/team-research @Armor-test/squad-payments @Armor-test/unit-governance
+/hooks/ @Armor-test/squad-frontend @Armor-test/squad-api @Armor-test/squad-research
+/core/ @Armor-test/squad-api @Armor-test/grp-api @Armor-test/dept-identity
+
+# File type ownership
+*.yaml @Armor-test/grp-search @Armor-test/unit-test
+*.xml @Armor-test/dept-reliability @Armor-test/dept-release
+*.md @Armor-test/grp-search @Armor-test/squad-search
+*.json @Armor-test/squad-frontend @Armor-test/grp-search @Armor-test/squad-apps
+*.go @Armor-test/squad-cloud @Armor-test/dept-test
+*.proto @Armor-test/dept-notifications @Armor-test/squad-api
+*.py @Armor-test/grp-payments @Armor-test/squad-api @Armor-test/grp-ui
+*.cpp @Armor-test/grp-api @Armor-test/dept-notifications @Armor-test/dept-security
+*.properties @Armor-test/squad-payments @Armor-test/dept-ui
+*.jsx @Armor-test/team-research @Armor-test/squad-product @Armor-test/team-reporting
+*.config @Armor-test/dept-notifications @Armor-test/dept-data @Armor-test/team-governance
+*.js @Armor-test/squad-search @Armor-test/dept-data @Armor-test/team-notifications
+*.tf @Armor-test/unit-cloud @Armor-test/dept-automation
+*.swift @Armor-test/squad-cloud @Armor-test/team-reporting
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
